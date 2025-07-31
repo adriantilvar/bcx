@@ -1,4 +1,7 @@
-import { cn, type ClassValue } from "./class-builder";
+import { cx, type ClassValue } from "./class-builder";
+
+export type VariantProps<T> = 
+  T extends (props: infer P) => string ? P : never;
 
 type TConfig = {
 	base: ClassValue;
@@ -10,12 +13,8 @@ type TSelectionProps<S extends TConfig> = Partial<{
 	[K in keyof Omit<TConfig, "base">]: keyof S[K];
 }>;
 
-export const createVariants = <T extends TConfig>(config: T) => (props: TSelectionProps<T>) =>
-		cn(
+export const createVariants = <T extends TConfig>(config: T) => (props: TSelectionProps<T>) =>  cx(
 			config.base,
-			config.variant[props.variant ?? "default"],
-			config.size[props.size ?? "default"],
-		);
-
-export type VariantProps<T> = 
-  T extends (props: infer P) => string ? P : never;
+			config.variant[props && props.variant ? props.variant : "default"],
+			config.size[props && props.size ? props.size : "default"],
+);

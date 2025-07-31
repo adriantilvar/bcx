@@ -5,8 +5,7 @@ export type ClassValue =
 	| null
 	| undefined;
 
-// TODO: Add conflict resolution, similar to twMerge
-export const cn = (...inputs: ClassValue[]) => {
+export const cx = (...inputs: ClassValue[]) => {
 	let result = "";
 
 	for (const input of inputs) {
@@ -22,5 +21,5 @@ export const cn = (...inputs: ClassValue[]) => {
 		}
 	}
 
-	return result;
+	return result.trimEnd();
 };
