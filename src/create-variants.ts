@@ -1,4 +1,4 @@
-import { cx, type ClassValue } from "./class-builder";
+import { cx, type ClassValue } from "./merge-classes";
 
 export type VariantProps<T> = 
   T extends (props: infer P) => string ? P : never;

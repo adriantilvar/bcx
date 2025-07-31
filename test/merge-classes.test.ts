@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { cx } from "../src/class-builder"
+import { cx } from "../src/merge-classes"
 
 describe('cx', () => {
 	describe('Happy paths', () => {
