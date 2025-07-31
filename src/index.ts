@@ -1,2 +1,2 @@
-export { cx, type ClassValue } from "./merge-classes"
-export { createVariants, type VariantProps } from "./create-variants"
+export { createVariants, type VariantProps } from "./create-variants";
+export { type ClassValue, cx } from "./merge-classes";

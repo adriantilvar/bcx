@@ -2,6 +2,28 @@
   "name": "bcx",
   "version": "0.1.0",
   "type": "module",
+  "description": "A lightweight utility for working with CSS classes and variants.",
+  "author": "Adrian Tilvar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriantilvar/bcx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adriantilvar/bcx/issues"
+  },
+  "keywords": [
+    "CSS",
+    "Tailwind",
+    "class",
+    "classes",
+    "variant",
+    "variants",
+    "merge",
+    "bcx",
+    "cx",
+    "createVariants"
+  ],
   "module": "./dist/bcx.js",
   "types": "./dist/index.d.ts",
   "exports": {
@@ -14,9 +36,11 @@
   ],
   "scripts": {
     "build": "vite build",
+    "lint": "biome check ./src --write",
     "test": "vitest --coverage"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.1.3",
     "@types/node": "^24.1.0",
     "@vitest/coverage-v8": "3.2.4",
     "typescript": "~5.8.3",
