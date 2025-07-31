@@ -1,4 +1,4 @@
-# bcx
+# better-variants
 
 A lightweight utility for working with CSS classes and variants.
 

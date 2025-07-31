@@ -1,16 +1,16 @@
 {
-  "name": "bcx",
-  "version": "1.0.0",
+  "name": "better-variants",
+  "version": "0.1.0",
   "type": "module",
   "description": "A lightweight utility for working with CSS classes and variants.",
   "author": "Adrian Tilvar",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adriantilvar/bcx.git"
+    "url": "git+https://github.com/adriantilvar/better-variants"
   },
   "bugs": {
-    "url": "https://github.com/adriantilvar/bcx/issues"
+    "url": "https://github.com/adriantilvar/better-variants/issues"
   },
   "keywords": [
     "CSS",
@@ -20,15 +20,16 @@
     "variant",
     "variants",
     "merge",
-    "bcx",
+    "better-variants",
+    "better",
     "cx",
     "createVariants"
   ],
-  "module": "./dist/bcx.js",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/bcx.js"
+      "import": "./dist/index.js"
     }
   },
   "files": [
