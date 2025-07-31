@@ -80,7 +80,7 @@ button({ size: "sm" });
 The `VariantProps` utility extracts the expected prop types from your config:
 
 ```typescript
-import { VariantProps } from "better-variants";
+import { type VariantProps } from "better-variants";
 
 type ButtonProps = VariantProps<typeof button>;
 // type ButtonProps = { variant?: "default" | "primary" | "destructive"; size?: "default" | "sm" }
@@ -152,16 +152,6 @@ Usage:
 
 - ❌ No compound variants supported (e.g., `variant=primary` + `size=lg` → add special class)
 - 🔒 Configuration is limited to `base`, `variant`, and `size` (no arbitrary keys for now)
-
-Your **Contributing** section is solid in tone and intent, but it could be a little more specific and structured to encourage action and follow open source norms. Here's your original:
-
-> ## Contributing
->
-> Feedback and contributions are very much welcome. If you found a bug or have a feature request, feel free to open an issue or submit a PR.
-
-This is perfectly acceptable for a small utility, but here's an improved version that maintains your casual tone while adding a bit of structure:
-
----
 
 ## Contributing
 
