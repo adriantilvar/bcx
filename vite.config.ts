@@ -1,16 +1,17 @@
 /// <reference types="vitest" />
+import { resolve } from "node:path";
 import { defineConfig } from "vite";
-import { configDefaults } from "vitest/config";
-import { resolve } from "path";
 import dts from "vite-plugin-dts";
+import { configDefaults } from "vitest/config";
 
 export default defineConfig({
-  plugins: [dts()],
+  plugins: [dts({ rollupTypes: true })],
   build: {
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "better-variants",
-      fileName: "better-variants",
+      fileName: "index",
+      formats: ["es"],
     },
   },
   test: {
