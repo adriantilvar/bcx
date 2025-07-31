@@ -1,6 +1,6 @@
 {
   "name": "better-variants",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "type": "module",
   "description": "A lightweight utility for working with CSS classes and variants.",
   "author": "Adrian Tilvar",
