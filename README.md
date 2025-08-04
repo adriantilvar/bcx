@@ -110,7 +110,7 @@ type ButtonProps = React.ComponentProps<"button"> & VariantProps<typeof buttonVa
 
 const Button = ({ className, variant, size, children, ...props }: ButtonProps) => {
   return (
-    <button className={cn(className, buttonVariants({ variant, size })} {...props}>
+    <button className={cn(buttonVariants({ variant, size }), className)} {...props}>
       {children}
     </button>
   );
